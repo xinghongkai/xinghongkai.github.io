@@ -221,6 +221,7 @@
 <!--more-->
 
 <h1 id="overview">Overview</h1>
+
 <p>In the delivery of IT projects, including IS projects, integration projects, hardware product projects, and security-related content delivery is gradually comprehensive and deep, from a single security clause to a comprehensive IT security requirements specification; From security at the network level to security in integrated systems; From compliance to penetration testing; From secure delivery to security O&amp;M; From security technology to security management, it covers all aspects related to security: compliance, physical security, management security, communication security, operational security, security testing, among which the terms of management and technology are gradually balanced, and security delivery is gradually in line with typical security frame theory. In particular, the security of integrated systems occupies an increasing proportion in the delivery of product projects and integrated projects in civil aviation, customs and other business sites, especially with the increase of new products and solutions implemented on a global scale, and security, privacy-related regulations, industry norms, international standards, contract clauses and other constraints are becoming more and more complex and diverse, and at the same time, the security requirements in the specific delivery process are also diverse, such as governance requirements for products, solutions, suppliers, compliance needs, operational needs, Audit requirements, etc., greatly increase the difficulty and cost of project delivery.</p>
 
 <p>At the same time, the project customer gradually has a more professional IT management team, can be very professional to complete the procurement, testing, certification, installation of IT/IS system, as well as a relatively complete test acceptance process, in the whole process of security control also has a very professional, strict quality assurance process, such as the physical and network isolation of the test plant and the production site, the admission review of the supplier executive team, remote access control, network and server configuration authority management, change management approval, review, Implementation of IT security control policies, such as domain control, system upgrade and version control, configuration management, software system security design, access control design, etc. Customers have a clear understanding and need for regulations, contract terms, and security design, such as GDPR, CE certification, operational requirements, encryption security levels, etc., and relevant items can also put forward clear requirements for suppliers through contract terms.</p>
@@ -228,6 +229,120 @@
 <p>If there is no systematic response, then throughout the project management process, endless security requirements will become the biggest obstacle to project delivery, making the project lost in a large number of safety regulations and vague safety items, resulting in project schedule delays, increased costs, team fatigue, reduced customer satisfaction, and even project fines, and in severe cases, project execution failure.</p>
 
 <p>Audit-based IS project security delivery scheme A security management framework and process assurance guidance based on security audit ideas, including specific security management methodology, countermeasures and goals in all aspects of IS project related product design, development, delivery, operation and maintenance, forming a proactive and systematic project security requirements delivery scheme with cost-effectiveness as the ultimate goal. Traditional audit tends to procurement, operation and maintenance, including the audit needs of suppliers and customers, which refers to the use of open standards, principles, methods, guidelines, practices and technologies to plan, implement, evaluate and review the design, development, delivery, operation and maintenance of business or information systems and related processes</p>
+
+<h1 id="overview-of-the-secure-delivery-framework">Overview of the Secure Delivery Framework</h1>
+
+<p>The cost of security is high, including paperwork duties, administrative processes, analysis time, software development, equipment, testing, data conversion, training, implementation, ongoing support, divided into two aspects, on the one hand, management costs, such as management/governance, processes, team building; On the one hand, there is the cost of technical input, such as the introduction of new technologies, the procurement of new hardware, and the development of new solutions, which are a continuous process and require continuous investment, that is, operation. There is no absolute safety in the language of safety management, and the cost increases exponentially as the level of security increases, as Eugeen H. Spafford puts it, “A truly safe system is one that is powered off, poured into cement, and kept tightly in lead-lined isolation rooms guarded by heavily armed guards, and even then I doubt that absolute safety can be achieved.” This also shows that it is necessary to find a balance between safety goals and costs, and the safety-cost curve has three stages.</p>
+
+<p>The first stage is the security development stage, this stage is the initial stage of safety system construction, each safety technology, the introduction or establishment of management measures will bring cost improvement and production efficiency reduction, cost is steadily increased, such as the establishment of safety baselines, team security capacity building, enterprise or product security measures improvement.</p>
+
+<div class="card-columns">
+    
+    <div class="card">
+        <img class="card-img-top" src="/theme/img/aix.png" />
+    </div>
+    
+</div>
+
+<p>The second stage is the security maintenance phase, in which product security is maintained at a stable level, involving more configuration optimization, more operational measures, such as leakage, patches, hardware operation and maintenance, continuous personnel training, product iterative updates, security management/governance system updates, etc.</p>
+
+<p>The third stage is the security improvement stage or the industry’s inherent security level requirements change (such as industries related to international people’s livelihood), new security challenges in the industry, new safety regulations, iterative updates of security products, which will involve more complex processes and more cutting-edge technologies in physics, logic, and management, and of course, higher costs.</p>
+
+<p>The main body of security is the enterprise and its operations. There are several important concepts to distinguish here: vendor, enterprise, product security, enterprise security, and security products, functional products (collectively referred to as information technology (systems), i.e. IT/IS). The supplier guarantees product security, and the supplier’s products include security products such as IPS, IDS, FireWall, anti-malware, etc., and functional products such as OA, accounting, attendance, etc. Enterprises require enterprise security, that is, operational security or security operation, the supplier’s products need to operate within the framework of the enterprise, to meet the requirements of the enterprise’s access strategy, configuration strategy, operation strategy, audit strategy, that is, product delivery, operation, the link between product security and enterprise security is laws, regulations, specifications and delivery process management, as shown below.</p>
+
+<p>Vendors and enterprises have different security goals as separate entities or roles, and the figure highlights the difference in security requirements between the two roles, and in practice an entity generally has both roles. Both roles go through the same security promotion curve, and the product or security between the two roles is passed through the delivery process. This is also the overall architecture diagram of the security requirements delivery scenario mentioned in this article.</p>
+
+<div class="card-columns">
+    
+    <div class="card">
+        <img class="card-img-top" src="/theme/img//arch.png" />
+    </div>
+    
+</div>
+
+<h2 id="principles-of-the-secure-delivery-framework">Principles of the Secure Delivery Framework</h2>
+
+<p>There are many security frameworks, such as ISO27000, CIS, RMF, FIPS, COBIT, etc., and their systems are more complex, plus process management models, such as CMMI, ITIL, Six Sigma, in fact, few enterprises or individuals can fully master the implementation and control of these standards. But on the other hand, understanding the principles of these frameworks, understanding their roles and how they work, and matching these principles to the security needs of the enterprise or product, is fundamental, in several ways:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 Understand why security is more important than implementing it
+
+2 Achieving the required security is more feasible than implementing the security specified by all frameworks
+
+3 Without absolute security, understanding the security gap is important relative to what security is achieved
+
+4 Security comes at a huge cost
+</code></pre></div></div>
+
+<p>To give a few examples: password plus salt cannot solve man-in-the-middle attacks, replay attacks; Security incidents that cost a lot of money and manpower are highly feasible among state entities; All security measures can be vulnerable to experienced social engineers; The number of incidents of negative impact caused by employees with malicious internal intentions and lack of security awareness is increasing year by year.
+On the basis of understanding security management, delivery management is carried out from several aspects: quality assurance-based security system construction, audit-based security delivery, and ROI-based security delivery, the former of which the supplier considers the safe delivery from its own perspective, and the latter is the supplier needs to consider the security delivery from the perspective of the enterprise.</p>
+
+<h1 id="construction-of-safety-system-based-on-quality-assurance">Construction of safety system based on quality assurance</h1>
+
+<p>The prerequisite for secure delivery is a security assurance system, namely Baked In Security rather than Bolt On Security. Security is not achieved overnight, on the contrary, security is a long process, involving design, development, delivery, operation and maintenance, and decommissioning process. As cybersecurity becomes more important in IT project delivery, the trend towards secure delivery is emerging: from initial compliance requirements, such as configuration files not to contain sensitive letters; to network security management, such as switches, firewalls, servers, operating system security settings; to the need for penetration testing, such as hiring a third-party independent organization to conduct various types of penetration testing of the system; To clear security management, audit, and O&amp;M requirements, such as requiring suppliers to provide SPOC (single point of contact), EDR, AD-based IT O&amp;M management, and timely unconditional investigation and cooperation on security incidents. In this process, there are also some general principles of security delivery, such as physical security depends on customers, network security depends on configuration, system security depends on patches, application security depends on design, and operational security depends on testing, operation and maintenance. These five aspects are managed by the supplier before delivery, and the safe products and product specifications are output, and the supplier cooperates with the enterprise to manage after delivery. In fact, this also represents the two life cycles of IT products: development life cycle and operation life cycle, the former is carried out on the supplier side, the latter is carried out on the enterprise side, the former relies on the supplier product team, and the latter relies on the supplier operation and maintenance team and the enterprise IT team.</p>
+
+<h2 id="team-building">Team Building</h2>
+
+<p>On the basis of the guiding principles, the IT project delivery team/organizational structure is also formed, including not only the product department, but also the supplier IT department, legal department, and external expert team. Among them, the external team has unparalleled advantages in the introduction of universal security framework and knowledge, which is difficult for internal teams to have. In the early stages of the security framework, it is very necessary to bring in a team of external experts, although it will incur a certain cost, but it is worth it in terms of security assurance.</p>
+
+<p>The team needs to have leaders, such as IT team, R&amp;D team, operation and maintenance team, and testing team, of which the IT team is responsible for the network (hardware equipment, wiring, strong and weak power requirements), servers, AD, DNS, Kerberos and other basic software and hardware infrastructure; The R&amp;D team is responsible for the security of the product itself, such as development platform, development library, database, software product, hardware product, test, etc.; According to the security specifications of IT and R&amp;D teams, the O&amp;M team formulates and maintains product O&amp;M system documents to jointly ensure the basic security features of the product, such as compliance, privacy security, confidentiality, integrity, and availability.</p>
+
+<p>The leader is responsible for interpreting the safety framework, laws and regulations, establishing/introducing security baselines, building the team’s safety echelon, developing/introducing the security model, and sorting out the project security requirements and developing a security delivery plan when necessary.</p>
+
+<div class="card-columns">
+    
+    <div class="card">
+        <img class="card-img-top" src="/theme/img/team.png" />
+    </div>
+    
+</div>
+
+<p>Among them, the interpretation of security regulations and industry norms is the most important, taking China as an example, the relevant laws include the Cryptography Law of the People’s Republic of China, the National Security Law of the People’s Republic of China, the Cybersecurity Law of the People’s Republic of China, the Graded Protection of Network Security 2.0, the Data Security Law of the People’s Republic of China, and the Personal Information Protection Law of the People’s Republic of China. The most well-known in the EU is the Privacy Protection Regulation GDPR; U.S. SP Series, Federal Information Processing Standard (FIPS); Other Sweden, France, South Korea, Canada, etc. have various national security regulations. Industry specifications are more well-known such as PCI-DSS; IT project hardware IT infrastructure, hardware products will be involved in the industry, regulations, such as EU CLP regulations, CE certification related EN 61000-6-1, 2, 3, etc</p>
+
+<h2 id="security-baseline-and-security-model">Security Baseline and Security Model</h2>
+
+<p>The security baseline is established or introduced by the professional team/group leader according to the security objectives of the product after interpreting the security framework, and this process is called the tailoring and modification of the security baseline. The security model is a methodology for applying the update and implementation of security baselines to the product development life cycle, that is, how to ensure that safety baselines are updated and followed in a timely manner. In 2006, Dr. McGraw proposed the BSI built-in security model based on SDL by focusing on risk management at every stage of the software development life cycle.</p>
+
+<div class="card-columns">
+    
+    <div class="card">
+        <img class="card-img-top" src="/theme/img/bsi.png" />
+    </div>
+    
+</div>
+
+<p>Main contents of the model: Risk management, software security touchpoints, and security knowledge are the three pillars of software security.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Risk management: A guiding approach throughout the development lifecycle.
+Software security touchpoints: Guarantee the security of software development through a number of security touchpoints at each stage, so as to ensure software security as a whole.
+Security knowledge: Emphasis on summarizing professional security knowledge and experience, training software developers, and ensuring their implementation into projects and product development through actual contact points.
+</code></pre></div></div>
+
+<p>Compared with RMF, STRIDE, MITRE ATT&amp;CK, etc., BSI is a verified knowledge point or experience, the former is the process, the latter is the knowledge base, the former is combing and summarizing, the latter is execution, which is more suitable for a rich team structure, such as a capability echelon team composed of senior engineers, engineers, and assistant engineers. An interesting feedback in the actual implementation process is that the usually vague security concept or vulnerability, under the BSI model, actually corresponds to a design, a piece of code, or even a safe function call, or a configuration, such as buffer overflow vulnerabilities can be solved by calling safe copy functions, which is also the most important security development method in C/C++ programming. For example, SNMP 3.0 can be used to solve the high-risk vulnerabilities caused by the low-version SNMP protocol.</p>
+
+<h2 id="security-guarantees">Security Guarantees</h2>
+
+<p>The most important aspect of security assurance is the entire product team’s understanding of security, which needs to be emphasized in an audit-based IS project delivery plan, otherwise the team will always have a sense of urgency. This is followed by the attention of the relevant leaders, or Due Care. Again, the construction of simple and simple security processes, for example, a more specific example, such as: Patch Tuesday to download and test patches; Update the Nessus feature library on a quarterly basis; These entries may be contained in one or more documents, the content of which should not be too complex, but easy to find, update, and publish; Finally, the blessing of the maturity model.</p>
+
+<p>The goal of CMM is to reduce and then eliminate the decision-making power of department managers or employees. By giving more control to the upper levels, decision-making power increases with maturity. After reaching level 5, the employee is a human commodity with a bureaucratic air to prevent any major differences (such as no power, no control, and no real change). CMM is a best practice for measuring process maturity. Whether it’s process or management, manufacturing or software development, it can be adopted. But senior leaders are advised to balance Due Care and Due Diligence in the strength and depth of CMM decision-making, with a greater focus on being informed and empowered</p>
+
+<div class="card-columns">
+    
+    <div class="card">
+        <img class="card-img-top" src="/theme/img/thread.png" />
+    </div>
+    
+</div>
+
+<h1 id="audit-based-secure-delivery">Audit-based secure delivery</h1>
+
+<p>In view of the absence of absolute security and the high cost involved in achieving security, it is recommended to implement audit-based delivery process management in the process of secure delivery to achieve reasonable security, rather than theoretical absolute security or high security, on the one hand, to reduce delivery risk, on the other hand to meet acceptable ROI, that is, the balance of delivery value and delivery cost.</p>
+
+<p>Audit-based secure delivery is to put forward security requirements for suppliers from the perspective of the enterprise, first of all, to understand the procurement process of the enterprise, so that different security deliverables can be delivered at different stages, such as communication and clarification in the form of documents in the early stage; During the implementation period, various forms of factory acceptance testing and enterprise on-site acceptance testing are the mainstay; The post-delivery operation phase is carried out in the form of system patches and configuration changes; Secondly, distinguish the source of security needs, contract terms, technical annexes, local regulations, international standards; The third is to distinguish between administrative, physical, technical/logical requirements; Finally, it is necessary to carry out effective security-related regular communication meetings with enterprises, different regional cultures will have more or less differences in the understanding and implementation of standards in strength and size, such as the default password problem after the password is reset by the administrator, if the goal is to facilitate management, the default password can be 123456, if the security requirements are higher, the default password may need to be replaced regularly, and also to meet certain security policies, such as length is not less than 8 characters, by lowercase letters, uppercase letters, numbers, Consists of 3 of the 4 types of special characters. This process also facilitates the gradual improvement of quality assurance processes, such as the BSI Knowledge Base.</p>
+<h1 id="conclusion">Conclusion</h1>
+
+<p>As security and privacy gradually enter the public’s field of vision, like the mobile Internet, AI, big data, blockchain, and metaverse, it is foreseeable that the role of security in social life and economic development will become more and more obvious, corporate responsibility and personal responsibility will become clearer, and relevant management norms will become more and more perfect, which requires IT projects to have an overall perspective on security management during R&amp;D and delivery.</p>
+
+<p>The security delivery solution in IT projects provides such a perspective and framework in depth, covering three important knowledge domains of IT security, IT project management and IT security audit, and demonstrates the framework structure and logic from the perspectives of suppliers and enterprises, R&amp;D and operations, sellers and purchasers, and discusses the different focuses of the two roles on security, such as product security on the higher priority of the supplier side, namely proactive security, Baked in Security, while the enterprise side focuses on delivery, operation and maintenance security. Of course, the underlying logic is still to understand security, a strong team, that is, why security is needed, how to do it, how to deliver security, and how to stay safe.</p>
 
 
 
